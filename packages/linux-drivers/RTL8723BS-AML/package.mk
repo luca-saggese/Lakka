@@ -18,8 +18,8 @@
 
 PKG_NAME="RTL8723BS-AML"
 PKG_VERSION="2574ac7"
-PKG_REV="1"
-PKG_ARCH="arm aarch64"
+PKG_REV="1" 
+PKG_ARCH="any"
 PKG_LICENSE="GPL"
 # amlogic: PKG_SITE="http://openlinux.amlogic.com:8000/download/ARM/wifi/"
 PKG_SITE="https://github.com/CGarces/RTL8723BS"
