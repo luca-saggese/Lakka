@@ -23,6 +23,7 @@ PKG_ARCH="arm aarch64"
 PKG_LICENSE="GPL"
 # amlogic: PKG_SITE="http://openlinux.amlogic.com:8000/download/ARM/wifi/"
 PKG_SITE="https://github.com/CGarces/RTL8723BS"
+
 PKG_URL="$PKG_SITE/archive/$PKG_VERSION.tar.gz"
 PKG_SOURCE_DIR="rtl8723BS-$PKG_VERSION*"
 PKG_DEPENDS_TARGET="toolchain linux"
