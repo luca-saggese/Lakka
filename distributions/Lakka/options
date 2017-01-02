@@ -238,7 +238,7 @@
   ADDON_PATH="$ADDON_VERSION/$PROJECT/$TARGET_ARCH"
   ADDON_URL="$ADDON_SERVER_URL/$ADDON_PATH"
 
-  LAKKA_MIRROR="http://sources.lakka.tv"
+  LAKKA_MIRROR="http://mirror.lakka.tv"
   RA_PLAYLIST_NAMES=""\
 "Atari - 2600.lpl;"\
 "Atari - 5200.lpl;"\
