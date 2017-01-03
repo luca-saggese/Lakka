@@ -16,7 +16,7 @@
 #  along with LibreELEC.  If not, see <http://www.gnu.org/licenses/>.
 ################################################################################
 
-PKG_NAME="RTL8723BS-BT"
+PKG_NAME="RTL8723BS_BT"
 PKG_VERSION="09eb91f"
 PKG_REV="1" 
 PKG_ARCH="any"
