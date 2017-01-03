@@ -209,6 +209,30 @@ LABEL installer
   KERNEL /KERNEL
   APPEND boot=UUID=$UUID_SYSTEM installer quiet tty vga=current vt.global_cursor_default=0 loglevel=2
 EOF
+      mkdir -p "$OE_TMP/boot/grub/"
+      cat << EOF > "$OE_TMP"/boot/grub/grub.cfg
+
+set default=0
+set timeout=2
+menuentry "Lakka" {
+set root=(hd0,1)
+linux /KERNEL boot=UUID=$UUID_SYSTEM disk=UUID=$UUID_STORAGE quiet ssh vga=current vt.global_cursor_default=0 loglevel=2
+boot
+}
+
+menuentry "Lakka Console" {
+set root=(hd0,1)
+linux /KERNEL boot=UUID=$UUID_SYSTEM disk=UUID=$UUID_STORAGE quiet ssh vga=current vt.global_cursor_default=0 loglevel=2 tty retroarch=0
+boot
+}
+
+menuentry "Lakka Install" {
+set root=(hd0,1)
+linux /KERNEL boot=UUID=$UUID_SYSTEM installer quiet tty vga=current vt.global_cursor_default=0 loglevel=2
+boot
+}
+EOF
+
     fi
 elif [ "$BOOTLOADER" = "bcm2835-bootloader" ]; then
   # create bootloader configuration
