@@ -51,6 +51,7 @@ make_target() {
 makeinstall_target() {
   mkdir -p $INSTALL/lib/firmware/rtl_bt
     cp rtlbt_fw_new $INSTALL/lib/firmware/rtl_bt/rtlbt_fw
+    cp rtlbt_config $INSTALL/lib/firmware/rtl_bt/
   mkdir -p $INSTALL/usr/bin/
   	cp -p *.sh $INSTALL/usr/bin/
   	cp -p rtk_hciattach $INSTALL/usr/bin/
