@@ -49,8 +49,6 @@ make_target() {
 }
 
 makeinstall_target() {
-  mkdir -p $INSTALL/lib/modules/$(get_module_dir)/$PKG_NAME
-    cp *.ko $INSTALL/lib/modules/$(get_module_dir)/$PKG_NAME
   mkdir -p $INSTALL/lib/firmware/rtl_bt
     cp rtlbt_fw* $INSTALL/lib/firmware/rtl_bt/
   mkdir -p $INSTALL/usr/bin/
