@@ -51,5 +51,6 @@ make_target() {
 makeinstall_target() {
   mkdir -p $INSTALL/lib/modules/$(get_module_dir)/$PKG_NAME
     cp *.ko $INSTALL/lib/modules/$(get_module_dir)/$PKG_NAME
-  cp *.bin $INSTALL/lib/firmware/rtlwifi
+  mkdir -p $INSTALL/lib/firmware/rtlwifi
+    cp *.bin $INSTALL/lib/firmware/rtlwifi
 }
