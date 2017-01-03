@@ -25,10 +25,12 @@ PKG_ARCH="any"
 PKG_LICENSE="GPL"
 PKG_SITE="https://github.com/lakkatv/Lakka"
 PKG_URL=""
-PKG_DEPENDS_TARGET="retroarch uzebox mgba o2em puae snes9x picodrive 81 yabause hatari dosbox mame2003 gw-libretro fuse-libretro scummvm bluemsx beetle-sgx lutro 4do prosystem bsnes-mercury tyrquake 2048 virtualjaguar ppsspp beetle-vb beetle-wswan desmume beetle-ngp beetle-pcfx beetle-psx-hw beetle-psx pcsx_rearmed mupen64plus glupen64 vecx snes9x2010 dinothawr prboom beetle-pce fbalpha handy genesis-plus-gx nxengine nestopia gambatte stella vbam reicast"
-if [ "$ARCH" == "x86_64" ]; then
-  PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET beetle-saturn"
-fi
+
+PKG_DEPENDS_TARGET="Mesa RetroArch 2048 dosbox beetle-vb beetle-wswan hatari desmume beetle-ngp beetle-pcfx mame beetle-psx mupen64plus vecx snes9x-next dinothawr prboom beetle-pce fba handy genesis-plus-gx nxengine fceu-next gambatte stella vbam libretro-ffmpeg retroarch-joypad-autoconfig core-info"
+PKG_BUILD_DEPENDS=""
+
+
+
 PKG_PRIORITY="optional"
 PKG_SECTION="virtual"
 PKG_SHORTDESC="Lakka metapackage for Generic"
